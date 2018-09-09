@@ -6,6 +6,8 @@ Now it's super simple!
 
 This little guy will move your mouse back and forth a tiny little bit every second; and you won't even notice it!
 
+Works well in companies where you can't stop your computer from Idling and things start showing as you're away when you've decided to go relax on the beach!
+
 
 ## 1. Get Setup
 
