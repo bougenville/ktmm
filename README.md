@@ -4,6 +4,9 @@ Ever needed to stop your computer from going into Idle mode?
 
 Now it's super simple!
 
+This little guy will move your mouse back and forth a tiny little bit every second; and you won't even notice it!
+
+
 ## 1. Get Setup
 
 ```
