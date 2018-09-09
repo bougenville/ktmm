@@ -1,5 +1,4 @@
-# ktmm
-Keep That Mouse Moving
+# ktmm (Keep That Mouse Moving)
 
 Ever needed to stop your computer from going into Idle mode?
 
