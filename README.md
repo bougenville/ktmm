@@ -1,4 +1,4 @@
-# ktmm (Keep That Mouse Moving)
+# ktmm (Keep That Mouse Moving!)
 
 
 ## What is this?
