@@ -34,5 +34,5 @@ git clone https://github.com/ao/ktmm.git
 cd ktmm
 pip install -r requirements.txt
 virtualenv -p python3 env
-env/bin/python python ktmm.py
+env/bin/python ktmm.py
 ```
