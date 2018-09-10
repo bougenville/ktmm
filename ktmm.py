@@ -2,7 +2,7 @@
 # "Keep That Mouse Moving"
 # Stops a computer from going into IDLE mode
 #
-# Created by Andrew Odendaal (ao.gl)
+# Created by Andrew Odendaal (https://github.com/ao/ktmm)
 #
 from pynput.mouse import Button, Controller
 import time
