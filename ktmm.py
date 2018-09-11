@@ -5,7 +5,7 @@ Description:	Stops a computer from going into IDLE mode
 Created by:	Andrew Odendaal (https://github.com/ao/ktmm)
 """
 
-from pynput.mouse import Button, Controller
+from pynput.mouse import Controller
 import time
 
 if __name__ == '__main__':
