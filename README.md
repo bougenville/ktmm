@@ -12,6 +12,10 @@ This little guy will move your mouse back and forth a tiny little bit every seco
 ## When would I ever use this?
 Works well in companies where you can't stop your computer from Idling and things start showing as you're away when you've decided to go relax on the beach!
 
+## Why was this utility made?
+The author could not stop the screensaver from being triggered after 5 minutes (permissions issues) and while waiting for gcc/make/other to complete compiling project, the machine would lock up and turn off (thanks big brother company..).
+This utility makes sure that the screensaver is never triggered and the compile job completes with smiles all around!
+It also makes sure that the computer never, ever, ever goes into Idle mode..
 
 ## 1. Get Setup
 
