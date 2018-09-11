@@ -1,9 +1,9 @@
-'''
-"Keep That Mouse Moving"
-Stops a computer from going into IDLE mode
-
-Created by Andrew Odendaal (https://github.com/ao/ktmm)
-'''
+"""
+Name:		ktmm
+Brief:		'Keep That Mouse Moving'
+Description:	Stops a computer from going into IDLE mode
+Created by:	Andrew Odendaal (https://github.com/ao/ktmm)
+"""
 
 from pynput.mouse import Button, Controller
 import time
