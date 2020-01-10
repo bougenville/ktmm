@@ -38,7 +38,8 @@ There's no need to stop it, unless you really do want to go idle!
 ```
 git clone https://github.com/ao/ktmm.git
 cd ktmm
-pip install -r requirements.txt
 virtualenv -p python3 env
-env/bin/python ktmm.py
+pip install -r requirements.txt
+. env/bin/activate
+python ktmm.py
 ```
