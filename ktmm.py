@@ -13,7 +13,10 @@ if __name__ == '__main__':
 	while True:
 		mouse.move(0.1, 0.1)
 		time.sleep(10)
+		print('Ho!')
 		mouse.move(-0.1, -0.1)
 		time.sleep(10)
+		print('Ha!')
+
 
 	# Oh damn, that was simple!
