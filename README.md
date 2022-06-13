@@ -1,45 +1,36 @@
 # ktmm (Keep That Mouse Moving!)
 
+Thanks to [Andrew Odendaal](https://github.com/ao/ktmm)
 
-## What is this?
-Ever needed to stop your computer from going into Idle mode?
+## Use pyenv and pyenv-virtualenv (my method of running this tool)
 
-Now it's super simple!
+1. Prepare the env
 
-## How does it work?
-This little guy will move your mouse back and forth a tiny little bit every second; and you won't even notice it!
-
-## When would I ever use this?
-Works well in companies where you can't stop your computer from Idling and things start showing as you're away when you've decided to go relax on the beach!
-
-## Why was this utility made?
-The author could not stop the screensaver from being triggered after 5 minutes (permissions issues) and while waiting for gcc/make/other to complete compiling the project files, the machine would lock up and turn off (thanks big brother company..).
-
-This utility makes sure that the screensaver is never triggered and the compile job completes with smiles all around!
-
-It also makes sure that the computer never, ever, ever goes into Idle mode..
-
-## 1. Get Setup
-
+```zsh
+brew install pyenv pyenv-virtualenv
+pyenv install 3.10.4 # if you don't know the exact version, use TAB to show the hints
+pyenv virtualenv 3.10.4 ktmm
 ```
-git clone https://github.com/ao/ktmm.git
-cd ktmm
-pip install -r requirements.txt
+2. Add below to your `~/.zprofile`:
+
+```zsh
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/shims:$PATH
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+alias ktmm="cd ~/Code/ktmm && pyenv shell ktmm && python ktmm.py"
 ```
 
-## 2. Now run it
-`python ktmm.py`
+3. Final preparation
 
-There's no need to stop it, unless you really do want to go idle!
-
-
-## If you want to run it in a virtualenv then do this instead:
-
+```zsh
+# git clone https://github.com/bougenville/ktmm.git ~/Code/ktmm
+gh repo clone bougenville/ktmm ~/Code/ktmm
+cd ~/Code/ktmm
+penv shell ktmm
+python -m pip install -U pip -i https://pypi.douban.com/simple
+pip install -r requirements.txt -i https://pypi.douban.com/simple
 ```
-git clone https://github.com/ao/ktmm.git
-cd ktmm
-virtualenv -p python3 env
-. env/bin/activate
-pip install -r requirements.txt
-python ktmm.py
-```
+
+4. Run `ktmm` thereafter.
