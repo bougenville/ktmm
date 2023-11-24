@@ -5,7 +5,7 @@ Description:	Stops a computer from going into IDLE mode
 Created by:	Andrew Odendaal (https://github.com/ao/ktmm)
 """
 
-from pynput.mouse import Controller
+from pynput.mouse import Button, Controller
 import time
 
 def now():
@@ -18,8 +18,9 @@ if __name__ == '__main__':
 	while True:
 		now()		
 		mouse.move(0.1, 0.1)
-		time.sleep(10)
+		# mouse.click(Button.left, 1)
+		time.sleep(30)
 		mouse.move(-0.1, -0.1)
-		time.sleep(10)
+		time.sleep(30)
 
 	# Oh damn, that was simple!
